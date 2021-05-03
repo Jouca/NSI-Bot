@@ -15,7 +15,7 @@ from PIL import Image,ImageFont,ImageDraw
 dbhost = "localhost"
 dbdatabase = "nsi"
 dbuser = "root"
-dbpassword = "UrMomGay"
+dbpassword = "password"
 
 #########################
 
@@ -34,7 +34,7 @@ chatclasseliste = [["S11SNT",828938993122148393],["S11MATHS",828938993122148393]
 
 student_role = 819966009087098881
 
-TOKEN = "ODE4OTAxNjg4NzE4ODUyMTE2.YEezoQ.cITdIQ_lQFSkY_40i5ccFj6jN-I"
+TOKEN = "TOKEN OF THE BOT"
 prefix = "nsi!"
 
 #########################
@@ -43,7 +43,6 @@ prefix = "nsi!"
 
 client = discord.Client(
 	status="online",
-	shard_count=3,
 	chunk_guilds_at_startup=False,
 	heartbeat_timeout=60)
 
@@ -225,7 +224,6 @@ async def on_message(message):
 				for k in roleclasseliste:
 					for o in range(len(roleclasseliste)):
 						if roleclasseliste[o][0] == classe:
-							print(chatclasseliste[o][1])
 							chatclasse = chatclasseliste[o][1]
 							classerole = guild.get_role(roleclasseliste[o][1])
 				await channelperm.set_permissions(classerole, connect=True,speak=True,stream=True,use_voice_activation=True)
