@@ -24,7 +24,7 @@ mysql-connector-python==8.0.20
 -e git+https://github.com/NeKitDS/nekit.site.git@1d729343966196611c3970b1226b7e40d81f1f83#egg=nekit.site
 oauthlib==3.1.0
 pefile==2019.4.18
-Pillow==7.1.2
+Pillow==10.3.0
 protobuf==3.11.3
 pycparser==2.20
 PyGithub==1.54.1
