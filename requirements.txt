@@ -1,5 +1,5 @@
 aioconsole==0.1.16
-aiohttp==3.6.2
+aiohttp==3.10.2
 async-timeout==3.0.1
 asynchttp==0.0.4
 asyncpg==0.21.0
